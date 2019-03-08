@@ -10,7 +10,7 @@ public class Exercise4 {
     public static void main(String[] args) {
 
       Scanner input = new Scanner(System.in);
-      System.out.println("Enter num 0-255");
+      System.out.println("Enter number to be converted to binary");
 
       int choice = input.nextInt();
 
@@ -23,40 +23,11 @@ public class Exercise4 {
 
     }
     public static void binaryConverter(int num){
-      // all the binary positions for decimals 0 -255
+      
 
+      String inBinary = Integer.toBinaryString(num); // built in function
 
-      int binary0, binary1, binary2, binary3, binary4, binary5, binary6, binary7;
-      Double remainder; // remainder when we divide with %
-
-      binary0 = num % 2; // clean divide by base 2
-      remainder = Math.floor(num); // get remainder
-      System.out.println(binary0);
-      System.out.println(remainder);
-      binary1 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary2 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary3 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary4 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary5 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary6 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      binary7 = remainder % 2;
-      remainder = Math.floor(remainder);
-
-      String result = binary7 + "" + binary6+ "" + binary5+ "" + binary4+ "" + binary3+ "" + binary2+ "" + binary1+ "" + binary0;
-
-      System.out.println(result);
+      System.out.println(inBinary);
 
 
     }
