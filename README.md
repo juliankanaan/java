@@ -1,8 +1,6 @@
 # Intro
 
-I know PHP, some python -- I got it.
-
-Let's see how long this lasts.
+Repo for all my Java class things. 
 
 
 # Compiling & Running java
