@@ -1,6 +1,6 @@
 # Intro
 
-Well this is me learning four modules in --  I don't know? -- two hours? I know PHP, some python -- I got it.
+I know PHP, some python -- I got it.
 
 Let's see how long this lasts.
 
