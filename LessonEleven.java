@@ -2,7 +2,7 @@ import java.util.*;
 
 /*
 using array data types pt.2
-# psych, can abs prov dr note, matter of psych.
+
 */
 
 // GOOD built-ins: Arrays.sort(), Arrays.binarySearch() Arrays.equals(array1, arr2) [true, false boolean]
