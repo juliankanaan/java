@@ -40,6 +40,12 @@ message.charAt(0); // is 'hi
 int pos = bigString.indexOf(searchPhrase); 
 
 ```
+# Helpful java.util.array things
+```
+java.util.Arrays.sort(numArr); 
+
+Sysytem.out.println(java.util.Arrays.toString(nums)); 
+```
 
 # Math functions 
 ```
