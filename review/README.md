@@ -18,6 +18,8 @@ input.close();
 
 `double newVal = Double.parseDouble(origString); // string to double`
 
+`Character.getNumericValue(charNum); // char to integer`
+
 ## Integer to ASCII 
 
 `char asciiChar = (char)num;`
