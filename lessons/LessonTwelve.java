@@ -5,7 +5,7 @@ import java.util.*;
 OOP,
 
 usage: javac LessonTwelve
-       java CreateUser // actually runs the prohra, 
+       java CreateUser // actually runs the prohra,
 */
 
 

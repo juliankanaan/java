@@ -3,7 +3,12 @@ import java.util.*;
 /*
 
 */
-class PhoneBook{
+
+package exercise2;
+public class PhoneBook{
+
+
+
   int id;
   String firstName; String lastName; String email;
   String zipCode;
