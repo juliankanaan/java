@@ -20,7 +20,7 @@ public class Question2 {
       for (int j=0; j < columns; j--, i++ ){
         int val1 = arr[i][j];
 
-        
+
 
 
       }

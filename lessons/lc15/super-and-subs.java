@@ -48,7 +48,7 @@ class AllPersons {
   // no main for this class
   public AllPersons(){
     // System.out.println("no-arg constructor");
-    // System.out.println("This is the ")
+    System.out.println("This is the first thing that actually will show in the console");
   }
 }
 
