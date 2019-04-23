@@ -18,6 +18,10 @@ class Address {
     this.city = city;
   }
 }
+/*
+Main class below. References Address & Name classes
+*/
+
 class StudentInfo {
   private Name name; // has-a relationship here w/ name class
   private Address address; // relationship w/ address class
