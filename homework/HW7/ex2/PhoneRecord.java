@@ -33,40 +33,42 @@ public class PhoneRecord {
   }
 
 }
-class AllRecords extends PhoneRecord {
+abstract class AllRecords extends PhoneRecord {
   // has a arraylist of records by default
   ArrayList<PhoneRecord> records = new ArrayList<PhoneRecord>();
 
   public void addEntry(){
     //String[] args = {};
     System.out.println("Adding new entry...");
-    records.add( new PhoneBookEntry());
+    records.add( new PhoneRecord());
   }
 
   public void editEntry(String nameSearch, PhoneRecord newRecord){
     // loop thru ArrayList
-    for (int i =0; i < records.size(); i++ ) {
-      if (item.name == nameSearch){ // TODO: data is in firstName, lastName
+    for (Iterator<PhoneRecord> it = records.iterator(); it.hasNext();) {
+      /*
+      if (it[] == nameSearch){ // TODO: data is in firstName, lastName
         System.out.println("found!");
         records.set(i, newRecord);
       } else {
         System.out.println("Item not found!");
       }
+      */
     }
   }
 
   // below to be built within child classes (depending on user ability)
 
-  abstract public void deleteEntry(){}
+  abstract public void deleteEntry();
 
-  abstract public void printAdminInfo(){}
+  abstract public void printAdminInfo();
 
-  abstract public void changePassword(){}
+  abstract public void changePassword(String newPassword);
 
-  abstract public void changeUsername(){}
+  abstract public void changeUsername(String newUsername);
 
-  abstract public PhoneRecord searchLinear(){}
+  abstract public void searchLinear(String nameSearch);
 
-  abstract public PhoneRecord searchBinary(){}
+  abstract public void searchBinary();
 
 }
