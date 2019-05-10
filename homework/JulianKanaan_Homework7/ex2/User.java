@@ -1,10 +1,10 @@
 import java.util.*;
 
 
-public class User extends AllRecords {
+public class User extends PhoneBook {
 
   String username; String password; String emailAddress; String id;
-  PhoneRecord phoneRecord;
+  PhoneBookEntry phoneRecord;
 
   public User(String id, String username, String password, String emailAddress){
     this.id = id;
@@ -82,16 +82,7 @@ class PhoneBookAdmin extends User {
   }
 
   public void deleteEntry(String nameSearch){
-    for (Iterator<PhoneRecord> it = records.iterator(); it.hasNext();) {
-      /*
-      if (records[i] == nameSearch){ // TODO: data is in firstName, lastName
-        //System.out.println("found!");
-        records.remove(i);
-      } else {
-        System.out.println("Item not found!");
-      }
-      */
-    }
+    
   }
 
   public void printAdminInfo(){
@@ -109,8 +100,8 @@ class PhoneBookAdmin extends User {
   }
 
   public void searchLinear(String nameSearch){
-    PhoneRecord foundRecord = null;
-    for (Iterator<PhoneRecord> it = records.iterator(); it.hasNext();) {
+    PhoneBookEntry foundRecord = null;
+    for (Iterator<PhoneBookEntry> it = records.iterator(); it.hasNext();) {
       /*
       if (records[i] == nameSearch){ // TODO: data is in firstName, lastName
         //System.out.println("found!");

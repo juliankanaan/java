@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PhoneRecord {
+public class PhoneBookEntry {
 
 
   String firstName; String lastName;
@@ -8,14 +8,14 @@ public class PhoneRecord {
   String phoneNumber;
 
 
-  public PhoneRecord(){
+  public PhoneBookEntry(){
     firstName = ask("First Name");
     lastName  = ask("Last Name");
     zipCode   = ask("Zip Code");
     phoneNumber = ask("Phone Number");
 
   }
-  public PhoneRecord(String firstName, String lastName, String zipCode, String phoneNumber){
+  public PhoneBookEntry(String firstName, String lastName, String zipCode, String phoneNumber){
     this.firstName = firstName;
     this.lastName = lastName;
     this.zipCode = zipCode;
@@ -33,28 +33,20 @@ public class PhoneRecord {
   }
 
 }
-abstract class AllRecords extends PhoneRecord {
+abstract class PhoneBook extends PhoneBookEntry {
   // has a arraylist of records by default
-  ArrayList<PhoneRecord> records = new ArrayList<PhoneRecord>();
+  ArrayList<PhoneBookEntry> records = new ArrayList<PhoneBookEntry>();
 
   public void addEntry(){
     //String[] args = {};
     System.out.println("Adding new entry...");
-    records.add( new PhoneRecord());
+    records.add( new PhoneBookEntry());
   }
 
-  public void editEntry(String nameSearch, PhoneRecord newRecord){
+  public void editEntry(String nameSearch, PhoneBookEntry newRecord){
     // loop thru ArrayList
-    for (Iterator<PhoneRecord> it = records.iterator(); it.hasNext();) {
-      /*
-      if (it[] == nameSearch){ // TODO: data is in firstName, lastName
-        System.out.println("found!");
-        records.set(i, newRecord);
-      } else {
-        System.out.println("Item not found!");
-      }
-      */
-    }
+
+
   }
 
   // below to be built within child classes (depending on user ability)
