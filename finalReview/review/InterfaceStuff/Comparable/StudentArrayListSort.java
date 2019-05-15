@@ -18,6 +18,9 @@ public class StudentArrayListSort {
       System.out.println(student.fullName + " " + student.gpa);
 
     }
+    // iterate over sorted list now
+
+    
 
 
   }
